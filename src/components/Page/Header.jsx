@@ -8,9 +8,11 @@ function Header() {
 
   return (
     <header className={` m-10 d-flex flex-row center ${styles.header}`}>
+      {/* Logo */}
       <div className="flex-fill">
         <img src={BFLogo} alt="Logo BF" />
       </div>
+      {/* Button List of the differents page */}
       <ul className={`${styles.headerList}`}>
         <button className={`btn btn-primary`}>
           <li>
@@ -38,6 +40,7 @@ function Header() {
           </li>
         </button>
       </ul>
+      {/* Showing the burger menu when the windows have a small size */}
       <i
         onClick={() => setShowMenu(true)}
         className={`fa-solid fa-bars ${styles.headerXS}`}
